@@ -1,0 +1,22 @@
+# Filename: lego.kv
+
+<MyStyle>:
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:1
+
+            Label:
+                text: "Name: "
+
+        Button:
+            text:"Verify Lego"
+            size_hint: 0.06, 0.05
+            id: verify_button
+
+        Button:
+            text:"Lego suggestion"
+            size_hint: 0.06, 0.05
+            id: suggestion_button
