@@ -45,7 +45,7 @@ class LegoApp(App):
 	def update(self, *args):
 		# Read frame from opencv
 		ret, frame = self.capture.read()  # reading a frame
-		frame = frame[120:120 + 250, 200: 200 + 250,:]  # cutting down to 120 width and 250 height
+		frame = frame[120:120 + 360, 200: 200 + 360,:]  # cutting down to 120 width and 250 height
 
 		# Flip horizontal and convert raw OpenCV2 image array to texture for rendering. Then setting our image equal to that texture
 		buf = cv2.flip(frame, 0).tostring()#flip image to horizontal and convert to string
